@@ -1,0 +1,17 @@
+.container{
+    max-width: 80%;
+    margin: 20px auto;
+    border: 2px solid black;
+    text-align: center;
+}
+
+#ori{
+    text-decoration-line: line-through;
+    position: relative;
+}
+
+#dis{
+    position: relative;
+    top: -20px;
+}
+
