@@ -22,7 +22,8 @@
   
   <div class="container-fluid">
     <div class="row" style="height: 100vh;">
-      <div class="col-lg-2 col-sm-3 p-0 bg-dark text-white position-relative">
+      <!-- sidebar -->
+      <div class="col-lg-2 col-sm-3 col-xs-3 p-0 bg-dark text-white position-relative">
         <a href="index.php" class="btn text-white d-block text-start selected">Dashboard</a>
         <a href="product.php" class="btn text-white d-block text-start">Product</a>
         <a href="event.php" class="btn text-white d-block text-start">Event</a>
