@@ -10,36 +10,43 @@ body {
 	width: 100%;
 }
 
+/* SIDEBAR */
+
+.sidebar {
+	min-height: calc(37.45px * 5);
+}
+
 .btn:hover,
 .selected {
 	background-color: gray;
 }
+
+/* DASHBOARD */
 
 .card {
 	width: 200px;
 	min-width: 200px;
 }
 
+/* PRODUCT */
+
 .icon {
 	font-size: 20px;
 	color: black;
 }
 
-.operation-cell {
-	display: flex;
+.icon:hover {
+	/* change later */
+	color: blue;
+	background-color: lightgray;
 }
 
-.operation-cell > a {
-	text-decoration: none;
+.bin-icon {
+	cursor: pointer;
 }
 
-@media (max-width: 900px) {
-	.card-container {
-		flex-direction: column;
-		align-items: center;
-	}
+/* View Product */
 
-	.card {
-		margin-block: 10px;
-	}
+.product-container {
+	min-width: 300px;
 }
