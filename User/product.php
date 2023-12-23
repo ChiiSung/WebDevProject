@@ -9,6 +9,11 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
     <link rel="icon" type="image/icon" href="../images/small_logo.png" >
     <title>Apple</title>
+    <style>
+     .item img{
+        object-fit: cover;
+      }
+    </style>
   </head>
     
   <body>
@@ -16,7 +21,7 @@
       include 'header.php';
     ?>
     <section>
-      <div class="room" style="border:3px solid lightgray;margin:-10px 100px 10px 100px;padding:30px;width: auto;" >
+      <div class="room" style="border:3px solid lightgray;margin:-10px 8% 10px 8%;padding:30px;width: auto;" >
         <div style="margin-bottom:20px;">
           <h3 style="margin:0px auto 5px 30px;">Product</h3>
         </div>
@@ -26,9 +31,10 @@
             $result = mysqli_query($conn, $command);
             while($row = mysqli_fetch_assoc($result)){
               ?>
-                <div class="item" style="border:1px solid grey; background-color:lightgray;padding: 10px;margin:10px;">
-                  <img src="<?php echo $row["picture"] ?>" alt="pic" height="300px">
+                <div class="item" style="border:1px solid grey; background-color:lightgray;padding: 10px;margin:10px;min-height: 100px;max-height:50%; min-width: 50px;max-width:20%">
+                  <img src="<?php echo $row["imgPath"] ?>" alt="pic" width="100%" style="min-height:90%;" >
                   <h4><?php echo $row['productName'] ?></h4>
+
                 </div>
               <?php
             }
