@@ -6,26 +6,34 @@
   <title>Document</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/sidebar.css">
+  <link rel="stylesheet" href="./styles/product.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 </head>
 
 <body>
+
   <div class="container-fluid">
-    <div class="row" style="height: 100vh;">
-      <!-- sidebar -->
-      <div class="col-lg-2 col-sm-2 col-xs-2 p-0 bg-dark text-white position-relative sidebar">
-        <a href="index.php" class="btn text-white d-block text-start">Dashboard</a>
-        <a href="product.php" class="btn text-white d-block text-start selected">Product</a>
-        <a href="event.php" class="btn text-white d-block text-start">Event</a>
-        <!-- change later -->
-        <a href="contact.php" class="btn text-white d-block text-start">Contact</a>
-        <a href="login.php" class="btn text-white d-block text-start position-absolute w-100 bottom-0">Logout</a>
+    <!-- sidebar -->
+    <div class="bg-dark text-white sidebar">
+      <a href="index.php" class="btn text-white d-block text-start">Dashboard</a>
+      <a href="product.php" class="btn text-white d-block text-start selected">Product</a>
+      <a href="event.php" class="btn text-white d-block text-start">Event</a>
+      <!-- change later -->
+      <a href="contact.php" class="btn text-white d-block text-start">Contact</a>
+      <a href="login.php" class="btn text-white d-block text-start position-absolute w-100 bottom-0">Logout</a>
+    </div>
+
+    <div class="main-content" style="">
+      <h1 class="title">Product</h1>
+      <div class="add-product-container position-absolute d-flex flex-column align-items-center mt-3 me-3" onclick="window.location.href = 'addProduct.php'">
+        <i class="bi bi-plus-square add-icon"></i>
+        <p class="m-0">Add New</p>
       </div>
-      <div class="col-lg-10 col-sm-10 pt-4">
-        <h1 class="ps-3">Product</h1>
+      <div class="mx-auto">
         <!-- table -->
         <!-- change later -->
-        <div class="table-responsive my-5 px-1">
+        <div class="my-5">
           <table class="table table-bordered border-dark">
             <thead>
               <div class="row">
@@ -38,10 +46,7 @@
                 <th scope="col" class="col-lg-2 col-sm-3 text-center">
                   Price
                 </th>
-                <th scope="col" class="col-1 text-center">
-                  Qty
-                </th>
-                <th scope="col" class="col-lg-2 text-center">
+                <th scope="col" class="col-lg-5 text-center">
                   Operation
                 </th>
               </div>
@@ -63,7 +68,6 @@
                 <td scope="row" class="text-center"><?php echo $count++?></td>
                 <td><?php echo $row["productName"]?></td>
                 <td scope="row" class="text-center">RM <?php echo $row["productPrice"]?></td>
-                <td class="text-center"><?php echo $row["productQuantity"]?></td>
                 <div class="container">
                   <td>
                     <div class="row">
