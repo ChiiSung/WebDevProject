@@ -1,0 +1,14 @@
+.form-container {
+	width: 350px;
+	min-width: 350px;
+	margin-top: 150px;
+	min-height: 300px;
+}
+
+.view-icon {
+	cursor: pointer;
+}
+
+.view-icon:hover {
+	color: blue;
+}
