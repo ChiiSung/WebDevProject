@@ -584,6 +584,7 @@ footer small {
 	}
 
 	.nav-logo-desktop {
+		height: 50%;
 		display: none;
 	}
 }
