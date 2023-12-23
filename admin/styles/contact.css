@@ -1,0 +1,43 @@
+.no-record {
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	font-size: 50px;
+}
+
+.card {
+	height: 220px;
+	max-width: 260px;
+	min-width: 100px;
+}
+
+.card-title {
+	margin: 0;
+}
+
+.country {
+	font-size: 12px;
+	display: inline;
+}
+
+.reply-btn {
+	width: 50%;
+	bottom: 10px;
+	left: 0;
+	right: 0;
+}
+
+@media only screen and (max-width: 575.9px) {
+	.title {
+		text-align: center;
+		padding: 0;
+	}
+
+	.card {
+		max-width: 800px;
+	}
+
+	.reply-btn {
+		width: 25%;
+	}
+}

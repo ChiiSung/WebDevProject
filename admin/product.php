@@ -24,12 +24,12 @@
   <div class="container-fluid">
     <!-- sidebar -->
     <div class="bg-dark text-white sidebar">
-      <a href="dashboard.php" class="btn text-white d-block text-start">Dashboard</a>
-      <a href="product.php" class="btn text-white d-block text-start selected">Product</a>
-      <a href="event.php" class="btn text-white d-block text-start">Event</a>
+      <a href="dashboard.php" class="btn nav-btn text-white d-block text-start">Dashboard</a>
+      <a href="product.php" class="btn nav-btn text-white d-block text-start selected">Product</a>
+      <a href="event.php" class="btn nav-btn text-white d-block text-start">Event</a>
       <!-- change later -->
-      <a href="contact.php" class="btn text-white d-block text-start">Contact</a>
-      <a href="clearId.php" class="btn text-white d-block text-start position-absolute w-100 bottom-0">Logout</a>
+      <a href="contact.php" class="btn nav-btn text-white d-block text-start">Contact</a>
+      <a href="clearId.php" class="btn nav-btn text-white d-block text-start position-absolute w-100 bottom-0">Logout</a>
     </div>
 
     <div class="main-content" style="">
