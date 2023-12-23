@@ -7,8 +7,8 @@
     $notes= mysqli_real_escape_string($conn, $_POST['notes']);
     $country= mysqli_real_escape_string($conn, $_POST['country']);
 
-    $query = "INSERT INTO contact_us (first_name, last_name, email, note, country, respond) VALUES
-    ('$firstname', '$lastname', '$email', '$notes', '$country', false)";
+    $query = "INSERT INTO contact_us (contact_us_id, first_name, last_name, email, note, country, respond) VALUES
+    (0, '$firstname', '$lastname', '$email', '$notes', '$country', false)";
     $result = mysqli_query($conn, $query);
 
     if($result){

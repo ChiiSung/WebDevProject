@@ -367,7 +367,20 @@
       </form>
     </div>
   </div>
+  <div style="height:70px"></div>
+  <div style="display:flex; align-items:center; justify-content: space-evenly;">
+    <div class="location" style="width:40%">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15935.369145522585!2d101.6865576!3d3.1363305!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc49c0d72639f5%3A0x16f1a5d86af1c42e!2sApple%20Malaysia%20Sdn%20Bhd!5e0!3m2!1sen!2smy!4v1703349711428!5m2!1sen!2smy"
+       width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div>
+        <h3>Office Location</h3>
+        <p>Apple Malaysia Sdn Bhd<br>Level 11<br>Menara CIMB,<br>Jalan Stesen Sentral 2,<br>Kuala Lumpur Sentral,<br>50470 Kuala Lumpur<br>03-2265-7000</p><br>
+        <h3>Phone Number:</h3> 
+        <p>+14089961010</p><br>
+      </div>
+    </div>
+  </div>
   <div style="height:50px"></div>
-
 </body>
 </html>
