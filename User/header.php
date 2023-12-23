@@ -9,19 +9,19 @@
               <img src="../images/logo.png" class="img-fluid nav-logo-desktop" alt="Company Logo">
             <ul class="navbar-nav ml-auto nav-right" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
               <li class="nav-item nav-custom-link">
-                <a class="nav-link" href="index.html">Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                <a class="nav-link" href="index.php">Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
               </li>
               <li class="nav-item nav-custom-link">
-                <a class="nav-link" href="product.html">Product <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                <a class="nav-link" href="product.php">Product <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
               </li>
               <li class="nav-item nav-custom-link">
-                <a class="nav-link" href="event.html">Event <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                <a class="nav-link" href="event.php">Event <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
               </li>
               <li class="nav-item nav-custom-link">
-                <a class="nav-link" href="aboutUs.html">About Us <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                <a class="nav-link" href="aboutUs.php">About Us <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
               </li>
               <li class="nav-item nav-custom-link">
-                <a class="nav-link" href="contactUs.html">Contact Us <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                <a class="nav-link" href="contactUs.php">Contact Us <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
               </li>
               <li class="nav-item nav-custom-link btn btn-demo-small">
                 <a class="nav-link" href="#">Try for Free <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
