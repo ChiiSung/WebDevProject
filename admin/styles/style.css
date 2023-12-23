@@ -8,45 +8,21 @@
 
 body {
 	width: 100%;
+	/* overflow-x: hidden; */
 }
 
-/* SIDEBAR */
-
-.sidebar {
-	min-height: calc(37.45px * 5);
+.main-content {
+	margin-top: 10px;
+	margin-left: 110px;
 }
 
-.btn:hover,
-.selected {
-	background-color: gray;
+.title {
+	padding: 10px 0px 0px 20px;
 }
 
-/* DASHBOARD */
-
-.card {
-	width: 200px;
-	min-width: 200px;
-}
-
-/* PRODUCT */
-
-.icon {
-	font-size: 20px;
-	color: black;
-}
-
-.icon:hover {
-	/* change later */
-	color: blue;
-	background-color: lightgray;
-}
-
-.bin-icon {
-	cursor: pointer;
-}
-
-/* View Product */
-
-.product-container {
-	min-width: 300px;
+@media only screen and (max-width: 575.9px) {
+	.main-content {
+		margin-top: 210px;
+		margin-inline: auto;
+	}
 }

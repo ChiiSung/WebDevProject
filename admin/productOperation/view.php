@@ -35,9 +35,6 @@
           <label class="form-label mt-3 mb-1 fw-bold">Price:</label>
           <br>
           <input type="text" readonly value="RM <?php echo $row["productPrice"]?>" disabled class="w-100 ps-2">
-          <label class="form-label mt-3 mb-1 fw-bold">Quantity:</label>
-          <br>
-          <input type="text" readonly value="<?php echo $row["productQuantity"]?>" disabled class="w-100 ps-2">
           <label class="form-label mt-3 mb-1 fw-bold">Description:</label>
           <br>
           <input type="text" readonly value="<?php echo $row["productDescription"]?>" disabled class="w-100 mb-3 ps-2">
