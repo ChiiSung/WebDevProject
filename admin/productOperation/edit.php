@@ -56,7 +56,7 @@
         <br>
         <input type="file" class="mb-3" id="image" name="image" accept="image/*">
         <br>
-        <input type="submit" value="ADD" class="btn btn-primary d-block mx-auto w-25 my-3">
+        <input type="submit" value="SAVE" class="btn btn-primary d-block mx-auto w-25 my-3">
       </form>
     </div>
     <script>

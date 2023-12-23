@@ -4,7 +4,6 @@
   include '../db.php';
 
   $productId = $_GET['id'];
-  echo $productId;
   $productName = $_POST['name'];
   $productPrice = $_POST['price'];
   $productUrl = $_POST['url'];
@@ -21,8 +20,7 @@
       mkdir($uploadFolder, 0777, true);
     }
 
-
-    // move_uploaded_file($tempName, $imgPath);
+    move_uploaded_file($tempName, $imgPath);
   }
 
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
