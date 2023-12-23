@@ -530,6 +530,13 @@ footer small {
 	#hero p {
 		font-size: 20px!important;
 	}
+	#productIF{
+		flex-direction: column;
+	}
+	#productIF img{
+		width: 80%;
+		align-self: center;
+	}
 }
 
 @media (max-width: 991px) { 

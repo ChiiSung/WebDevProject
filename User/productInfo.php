@@ -9,33 +9,42 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
         <link rel="icon" type="image/icon" href="../images/small_logo.png" >
         <title>Apple</title>
-      </head>
+        <style>
+            div img{
+                max-height: 500px;
+                object-fit: cover;
+                width: 40%;
+            }
+        </style>
+    </head>
     
-      <body>
-      <?php 
-        include 'header.php';
-      ?>
-      <section style="background-color:lightgray;">
-        <div style="margin:0.5% 5%;padding:30px;border:1px solid gray;background-color:white;">
-            <?php
-                $command = "SELECT * From product WHERE productId=$_GET[productID]";
-                $result = mysqli_query($conn, $command);
-                $row = mysqli_fetch_assoc($result)
-            ?>
-                <div style="display:flex">
-                    <img src="<?php echo $row["imgPath"] ?>" alt="pic" height="500px">
-                    <div style="display:inline block;padding:5%;s">
-                        <h2><?php echo $row['productName'] ?></h2>
-                        <h3 style="color:orangered">RM<?php echo $row['productPrice'] ?></h3>
-                        <p style="max-height:200px;overflow:auto;"><?php echo str_replace("\n","<br>",$row['productDescription']) ?></p>
-                        <button onClick="window.location.href='<?php echo $row['productUrl'] ?>'" style="background-color:gray;color:white;border-radius:3px;height:50px;width:150px;border-color:lightgray;">Buy Now</button>
+    <body>
+        <?php 
+            include 'header.php';
+        ?>
+        <section style="background-color:lightgray;">
+            <div style="margin:0.5% 5%;padding:30px;border:1px solid gray;background-color:white;">
+                <?php
+                    $command = "SELECT * From product WHERE productId=$_GET[productID]";
+                    $result = mysqli_query($conn, $command);
+                    $row = mysqli_fetch_assoc($result)
+                ?>
+                    <div id="productIF" style="display:flex">
+                        <img src="<?php echo $row["imgPath"] ?>" alt="pic">
+                        <div style="display:inline block;padding:5%;s">
+                            <h2><?php echo $row['productName'] ?></h2>
+                            <h3 style="color:orangered">RM<?php echo $row['productPrice'] ?></h3>
+                            <p style="max-height:200px;overflow:auto;"><?php echo str_replace("\n","<br>",$row['productDescription']) ?></p>
+                            <button onClick="window.location.href='<?php echo $row['productUrl'] ?>'" style="background-color:gray;color:white;border-radius:3px;height:50px;width:150px;border-color:lightgray;">Buy Now</button>
+                        </div>
                     </div>
-                </div>
-            <?php
-                
-            ?>
-        </div>
-      </section>
-    
-</body>
+                <?php
+                    
+                ?>
+            </div>
+        </section>
+        <?php 
+            include 'footer.php';
+        ?> 
+    </body>
 </html>
