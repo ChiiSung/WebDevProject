@@ -91,7 +91,8 @@
                       </div>
                       <div class="col-4 text-center">
                         <!-- some php here -->
-                        <i class="bi bi-trash-fill icon p-1 rounded bin-icon"></i>
+                        <i class="bi bi-trash-fill icon p-1 rounded bin-icon" onclick="deleteProduct(<?php echo $row['productId']?>, '<?php echo htmlspecialchars($row['productName'], ENT_QUOTES)?>')"></i>
+
                       </div>
                     </div>
                   </td>
@@ -109,6 +110,16 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script>
+    const deleteProduct = (id, name) => {
+      
+      const result = confirm(`Delete ${name}?`);
+      
+      if(result) {
+        window.location.href = `productOperation/delete_product.php?id=${id}`;
+      }
+    }
+  </script>
   </body>
 </html>
 <?php 
