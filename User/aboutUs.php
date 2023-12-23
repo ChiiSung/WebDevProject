@@ -163,7 +163,7 @@
 				<p>Whether you're a customer, a partner, or someone looking to join our team, we invite you to be a part of our 
 					journey. Together, we can continue to create products that inspire, innovate, and make a difference in the 
 					world.</p>
-				<a href="https://www.apple.com/careers/my/index.html" >
+				<a href="contactUs.php" >
 					<button class="button" style="vertical-align:middle"><span>Join Us Now</span></button>
 				</a>
 			</div>
