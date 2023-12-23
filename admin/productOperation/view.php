@@ -16,7 +16,7 @@
   <title>View Product</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="../styles/view_product.css">k
+  <link rel="stylesheet" href="../styles/view_product.css">
 </head>
 <body>
   <?php
@@ -33,7 +33,7 @@
         $row = mysqli_fetch_assoc($result);
   ?>
   
-  <div class="container my-5 border border-dark rounded position-relative product-container w-75">
+  <div class="container my-4 border border-dark rounded position-relative product-container w-75">
     <form>
       <a href="../product.php" class="btn btn-danger position-absolute end-0 me-2 mt-2">Back</a>
       <h1 class="mt-1">Product Details</h1>

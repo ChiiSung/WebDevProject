@@ -85,7 +85,7 @@
                         </a>
                       </div>
                       <div class="col-4 text-center">
-                        <a href="./productOperation/edit.php">
+                        <a href="./productOperation/edit.php?id=<?php echo $row["productId"]?>">
                           <i class="bi bi-pencil icon p-1 rounded"></i>
                         </a>
                       </div>

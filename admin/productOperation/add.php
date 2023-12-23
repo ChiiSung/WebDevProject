@@ -32,37 +32,37 @@
         <input type="number" class="w-100 ps-2" id="price" required placeholder="RM" name="price" step="0.01">
         <label class="form-label mt-3 mb-1 fw-bold" for="url">Url:</label>
         <br>
-        <input type="text" class="w-100 ps-2" id="url" name="url">
+        <input type="text" class="w-100 ps-2" id="url" name="url" required>
         <label class="form-label mt-3 mb-1 fw-bold" for="description">Description:</label>
         <br>
-        <textarea name="description" id="description" cols="30" rows="3" class="w-100 mb-1 ps-2"></textarea>
+        <textarea name="description" id="description" cols="30" rows="3" class="w-100 mb-1 ps-2" required></textarea>
         <label class="form-label mt-2 mb-1 fw-bold" for="description">Image:</label>
         <br>
-        <input type="file" class="mb-3" id="image" name="image" accept="image/*">
+        <input type="file" class="mb-3" id="image" name="image" accept="image/*" required>
         <br>
-        <input type="submit" value="ADD" class="btn btn-primary d-block mx-auto w-25 my-3" required>
+        <input type="submit" value="ADD" class="btn btn-primary d-block mx-auto w-25 my-3">
       </form>
     </div>
-  </body>
-  <script>
-    const discardChanges = () => {
-      const name = document.getElementById("name");
-      const price = document.getElementById("price");
-      const url = document.getElementById("url");
-      const description = document.getElementById("description");
-      const image = document.getElementById("image");
+    <script>
+      const discardChanges = () => {
+        const name = document.getElementById("name");
+        const price = document.getElementById("price");
+        const url = document.getElementById("url");
+        const description = document.getElementById("description");
+        const image = document.getElementById("image");
 
-      if(name.value || price.value || description.value || image.value || url.value) {
-        const result = confirm("Discard changes?");
-        if(result) {
+        if(name.value || price.value || description.value || image.value || url.value) {
+          const result = confirm("Discard changes?");
+          if(result) {
+            window.location.href="../product.php";
+          }
+        }else {
           window.location.href="../product.php";
         }
-      }else {
-        window.location.href="../product.php";
+        
       }
-      
-    }
-  </script>
+    </script>
+  </body>
 </html>
 
 <?php 
