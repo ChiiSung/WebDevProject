@@ -1,3 +1,11 @@
+<?php 
+  session_start();
+  if(!isset($_SESSION['admin'])) {
+    echo 'Please login first <br>';
+    echo 'Click <a href="index.php">here<a/> to login';
+  }else {
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,17 +24,17 @@
   <div class="container-fluid">
     <!-- sidebar -->
     <div class="bg-dark text-white sidebar">
-      <a href="index.php" class="btn text-white d-block text-start">Dashboard</a>
+      <a href="dashboard.php" class="btn text-white d-block text-start">Dashboard</a>
       <a href="product.php" class="btn text-white d-block text-start selected">Product</a>
       <a href="event.php" class="btn text-white d-block text-start">Event</a>
       <!-- change later -->
       <a href="contact.php" class="btn text-white d-block text-start">Contact</a>
-      <a href="login.php" class="btn text-white d-block text-start position-absolute w-100 bottom-0">Logout</a>
+      <a href="clearId.php" class="btn text-white d-block text-start position-absolute w-100 bottom-0">Logout</a>
     </div>
 
     <div class="main-content" style="">
       <h1 class="title">Product</h1>
-      <div class="add-product-container position-absolute d-flex flex-column align-items-center mt-3 me-3" onclick="window.location.href = 'addProduct.php'">
+      <div class="add-product-container position-absolute d-flex flex-column align-items-center mt-3 me-3" onclick="window.location.href = 'productOperation/add.php'">
         <i class="bi bi-plus-square add-icon"></i>
         <p class="m-0">Add New</p>
       </div>
@@ -77,13 +85,14 @@
                         </a>
                       </div>
                       <div class="col-4 text-center">
-                        <a href="./productOperation/edit.php">
+                        <a href="./productOperation/edit.php?id=<?php echo $row["productId"]?>">
                           <i class="bi bi-pencil icon p-1 rounded"></i>
                         </a>
                       </div>
                       <div class="col-4 text-center">
                         <!-- some php here -->
-                        <i class="bi bi-trash-fill icon p-1 rounded bin-icon"></i>
+                        <i class="bi bi-trash-fill icon p-1 rounded bin-icon" onclick="deleteProduct(<?php echo $row['productId']?>, '<?php echo htmlspecialchars($row['productName'], ENT_QUOTES)?>')"></i>
+
                       </div>
                     </div>
                   </td>
@@ -101,5 +110,18 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script>
+    const deleteProduct = (id, name) => {
+      
+      const result = confirm(`Delete ${name}?`);
+      
+      if(result) {
+        window.location.href = `productOperation/delete_product.php?id=${id}`;
+      }
+    }
+  </script>
   </body>
 </html>
+<?php 
+  }
+?>
