@@ -1,4 +1,5 @@
 <?php 
+    // change later
     $host = "localhost";
     $db_name = "webdev_project_db";
     $username = "root";

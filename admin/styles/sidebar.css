@@ -1,0 +1,26 @@
+.sidebar {
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 999;
+}
+
+.btn {
+	padding: 6px 30px 6px 5px;
+}
+
+.btn:hover,
+.selected {
+	background-color: gray;
+}
+
+@media only screen and (max-width: 575.9px) {
+	.sidebar {
+		height: calc(37.45px * 5);
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+}
