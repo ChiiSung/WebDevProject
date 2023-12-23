@@ -1,3 +1,7 @@
 .product-container {
 	min-width: 300px;
 }
+
+#description {
+	resize: none;
+}
