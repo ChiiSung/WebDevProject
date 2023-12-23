@@ -578,6 +578,7 @@ footer small {
 	}
 
 	.nav-logo-mobile {
+		height: 100%;
 		margin: auto;
 		padding-right: 50px;
 	}
