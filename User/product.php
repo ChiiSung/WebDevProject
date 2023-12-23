@@ -11,7 +11,11 @@
     <link rel="icon" type="image/icon" href="../images/small_logo.png" >
     <title>Apple</title>
     <style>
-     .item img{
+      .item:hover{
+        transform: scale(1.05);
+        transition: 0.3s;
+      }
+      .item img{
         object-fit: cover;
       }
       .row{
@@ -22,7 +26,7 @@
       }
       .fade {
         animation-name: fade;
-        animation-duration: 2s;
+        animation-duration: 3s;
       }
       @keyframes fade {
         from {opacity: 0.5} 
@@ -70,11 +74,14 @@
             $result = mysqli_query($conn, $command);
             while($row = mysqli_fetch_assoc($result)){
               ?>
-                <div class="item" style="border:1px solid grey; background-color:lightgray;padding: 10px;margin:1.25%;min-height: 100px;max-height:90%; min-width: 200px;max-width:22.5%;">
-                  <img src="<?php echo $row["imgPath"] ?>" alt="pic" width="100%" height="80%" style="min-height:80%;" >
-                  <h4><?php echo $row['productName'] ?></h4>
-                  <h5 style="color:orangered">RM<?php echo $row['productPrice'] ?></h5>
-                </div>
+                <a href="productInfo.php?productID=<?php echo $row['productId']?>" style="color:black;text-decoration:none;">
+                  <div class="item" style="border:1px solid grey; background-color:lightgray;padding: 10px;margin:1.25%;min-height: 100px;max-height:90%; min-width: 200px;max-width:22.5%;">
+                    <img src="<?php echo $row["imgPath"] ?>" alt="pic" width="100%" height="80%" style="min-height:80%;" >
+                    <h4><?php echo $row['productName'] ?></h4>
+                    <h5 style="color:orangered">RM<?php echo $row['productPrice'] ?></h5>
+                </a>
+                  </div>
+                
               <?php
             }
           ?>
