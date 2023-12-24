@@ -52,7 +52,7 @@
       include 'header.php';
     ?>
     <section>
-      <img class="mySlides fade" src="https://down-ws-my.img.susercontent.com/my-11134210-7r98s-lpkk1xzqkymp36.webp" style="width:100%;height:400px;margin-top: -50px;">
+      <img class="mySlides fade" src="https://photos5.appleinsider.com/gallery/53790-108184-iphone-ipad-apple-watch-promo-verizon-xl.jpg" style="width:100%;height:400px;margin-top: -50px;">
       <img class="mySlides fade" src="https://down-ws-my.img.susercontent.com/my-11134210-7r98t-lnuwepg4xynw65.webp" style="width:100%;height:400px;margin-top: -50px;">
       <img class="mySlides fade" src="https://down-ws-my.img.susercontent.com/my-11134210-7r98q-lnuwepg4zd8c6c.webp" style="width:100%;height:400px;margin-top: -50px;">
       <div style="text-align:center">
