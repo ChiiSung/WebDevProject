@@ -375,9 +375,9 @@
       </div>
       <div>
         <h3>Office Location</h3>
-        <p>Apple Malaysia Sdn Bhd<br>Level 11<br>Menara CIMB,<br>Jalan Stesen Sentral 2,<br>Kuala Lumpur Sentral,<br>50470 Kuala Lumpur<br>03-2265-7000</p><br>
+        <p>Apple Malaysia Sdn Bhd<br>Level 11<br>Menara CIMB,<br>Jalan Stesen Sentral 2,<br>Kuala Lumpur Sentral,<br>50470 Kuala Lumpur</p><br>
         <h3>Phone Number:</h3> 
-        <p>+14089961010</p><br>
+        <p>0322657000</p><br>
       </div>
     </div>
   </div>
