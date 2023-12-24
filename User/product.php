@@ -19,7 +19,7 @@
         object-fit: cover;
       }
       .room .row{
-        height: 500px;
+        height: 600px;
       }
       section img{
         object-fit: cover;
