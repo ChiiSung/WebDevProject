@@ -18,7 +18,7 @@
       .item img{
         object-fit: cover;
       }
-      .row{
+      .room .row{
         height: 500px;
       }
       section img{
@@ -60,8 +60,8 @@
         <span class="dot"></span> 
         <span class="dot"></span> 
       </div>
-      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)" style="top:250px;">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)" style="top:250px;">&#10095;</button>
     </section>
     <div>
       <div class="room" style="border:3px solid lightgray;margin:-10px 8% 10px 8%;padding:30px;">
@@ -120,6 +120,8 @@
         setTimeout(auto, 3000);
       }
     </script>
-
+    <?php
+      include 'footer.php';
+    ?>
   </body>
 </html>
