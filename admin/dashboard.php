@@ -20,21 +20,40 @@
   </head>
   <body>
     <?php 
-      include 'db.php';
 
-      $numOfProduct;
-      $numOfEvent;
-      $numOfContact;
+      function getTotal($name){
 
-      $query = "SELECT COUNT(*) AS total_count FROM product";
+        include 'db.php';
 
-      $result = mysqli_query($conn, $query);
+        $query = "SELECT COUNT(*) AS total_count FROM $name";
 
-      if(mysqli_num_rows($result) > 0) {
-        while($row = mysqli_fetch_assoc($result)) {
-          $numOfProduct = $row['total_count'];
+        $result = mysqli_query($conn, $query);
+
+        if(mysqli_num_rows($result) > 0) {
+          while($row = mysqli_fetch_assoc($result)) {
+            return $row['total_count'];
+          }
         }
       }
+
+      function getTotalContact(){
+
+        include 'db.php';
+
+        $query = "SELECT COUNT(*) AS total_count FROM contact_us WHERE respond != 1";
+
+        $result = mysqli_query($conn, $query);
+
+        if(mysqli_num_rows($result) > 0) {
+          while($row = mysqli_fetch_assoc($result)) {
+            return $row['total_count'];
+          }
+        }
+      }
+
+      $numOfProduct = getTotal('product');
+      $numOfEvent;
+      $numOfContact = getTotalContact();
     ?>
     
     <div class="container-fluid">
@@ -43,7 +62,6 @@
         <a href="dashboard.php" class="btn nav-btn text-white d-block text-start selected">Dashboard</a>
         <a href="product.php" class="btn nav-btn text-white d-block text-start">Product</a>
         <a href="event.php" class="btn nav-btn text-white d-block text-start">Event</a>
-        <!-- change later -->
         <a href="contact.php" class="btn nav-btn text-white d-block text-start">Contact</a>
         <a href="clearId.php" class="btn nav-btn text-white d-block text-start position-absolute w-100 bottom-0">Logout</a>
       </div>
@@ -73,7 +91,7 @@
               <div class="card mx-auto my-3 card-3" onclick="window.location.href = 'contact.php'">
                 <div class="card-body">
                   <h5 class="card-title">Total Contact</h5>
-                  <p class="card-text">8</p>
+                  <p class="card-text"><?php echo $numOfContact;?></p>
                 </div>
               </div>
             </div>
