@@ -51,10 +51,16 @@
     <?php 
       include 'header.php';
     ?>
+    <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+      <div class="w3-modal-content w3-animate-zoom">
+        <img id="img01" style="width:100%">
+      </div>
+    </div>
     <section>
-      <img class="mySlides fade" src="https://photos5.appleinsider.com/gallery/53790-108184-iphone-ipad-apple-watch-promo-verizon-xl.jpg" style="width:100%;height:400px;margin-top: -50px;">
-      <img class="mySlides fade" src="https://down-ws-my.img.susercontent.com/my-11134210-7r98t-lnuwepg4xynw65.webp" style="width:100%;height:400px;margin-top: -50px;">
-      <img class="mySlides fade" src="https://down-ws-my.img.susercontent.com/my-11134210-7r98q-lnuwepg4zd8c6c.webp" style="width:100%;height:400px;margin-top: -50px;">
+      <img class="mySlides fade" onClick="onClick(this)" src="https://photos5.appleinsider.com/gallery/53790-108184-iphone-ipad-apple-watch-promo-verizon-xl.jpg" style="width:100%;height:400px;margin-top: -50px;">
+      <img class="mySlides fade" onClick="onClick(this)" src="https://down-ws-my.img.susercontent.com/my-11134210-7r98t-lnuwepg4xynw65.webp" style="width:100%;height:400px;margin-top: -50px;">
+      <img class="mySlides fade" onClick="onClick(this)" src="https://down-ws-my.img.susercontent.com/my-11134210-7r98q-lnuwepg4zd8c6c.webp" style="width:100%;height:400px;margin-top: -50px;">
       <div style="text-align:center">
         <span class="dot"></span> 
         <span class="dot"></span> 
@@ -91,10 +97,13 @@
 
     <script>
       var slideIndex = 1;
+      var timer ;
       showDivs(slideIndex);
       auto();
       function plusDivs(n) {
         showDivs(slideIndex += n);
+        window.clearTimeout(timer);
+        timer = setTimeout(auto,3000);
       }
 
       function showDivs(n) {
@@ -117,7 +126,11 @@
 
       function auto(){
         plusDivs(1);
-        setTimeout(auto, 3000);
+      }
+
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
       }
     </script>
     <?php
