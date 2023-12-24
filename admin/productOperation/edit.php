@@ -34,7 +34,7 @@
         $_SESSION['imgPath'] = $row["imgPath"];
     ?>
 
-    <div class="container my-4 border border-dark rounded position-relative main-container">
+    <div class="container my-4 border border-dark rounded position-relative main-container w-75">
       <form enctype="multipart/form-data" action="edit_product.php?id=<?php echo $_GET['id']?>" method="post">
         <div href="../product.php" class="btn btn-danger position-absolute end-0 me-2 mt-2" onclick="discardChanges()">Back</div>
         <h1 class="mt-1">Edit product</h1>
