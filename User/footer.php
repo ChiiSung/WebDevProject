@@ -4,51 +4,50 @@
     <div class="container">
       <div class="row">
         <div class="col-md-3">
-          <h5>Seo Ranking</h5>
+          <h5>Products</h5>
           <ul>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Affiliate Program</a></li>
-            <li><a href="#">Developer API</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Video Tutorials</a></li>
+            <li><a href="product.php">Mac</a></li>
+            <li><a href="product.php">iPad</a></li>
+            <li><a href="product.php">iPhone</a></li>
+            <li><a href="product.php">Watch</a></li>
+            <li><a href="product.php">AirPods</a></li>
           </ul>
         </div>
         <div class="col-md-3">
-          <h5>Main Tools</h5>
+          <h5>Service and Repair</h5>
           <ul>
-            <li><a href="#">Rank Tracker</a></li>
-            <li><a href="#">Backlink Checker</a></li>
-            <li><a href="#">Keyword Generator</a></li>
-            <li><a href="#">Serp Checker</a></li>
-            <li><a href="#">Site Audit</a></li>
+            <li><a href="https://www.apple.com/my/support/products/">AppleCare Products</a></li>
+            <li><a href="https://www.apple.com/legal/warranty/">Hardware Warranties</a></li>
+            <li><a href="https://www.apple.com/legal/sla/">Software License Agreements</a></li>
+            <li><a href="https://support.apple.com/en-my/complimentary">Complimentary Support</a></li>
+            <li><a href="https://apps.apple.com/my/app/apple-support/id1130498044?l=en">Support app</a></li>
           </ul>
         </div>
         <div class="col-md-3">
-          <h5>Blog</h5>
+          <h5>About Apple</h5>
           <ul>
-            <li><a href="#">Get High Quality Backlinks</a></li>
-            <li><a href="#">Top Google Searches</a></li>
-            <li><a href="#">Avoid Google Penalties</a></li>
-            <li><a href="#">White Hat SEO Tips</a></li>
-            <li><a href="#">Google Trends</a></li>
+            <li><a href="aboutUs.php">About Us</a></li>
+            <li><a href="index.php">News & Events</a></li>
+            <li><a href="contactUs.php">Join Apple</a></li>
+            <li><a href="contactUs.php">Contact Apple</a></li>
           </ul>
         </div>
         <div class="col-md-3">
           <h5>Company</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur scelerisque, tortor nec mattis feugiat, velit purus euismod odio, quis vulputate velit urna.</p>
-          <p><a href="mailto:sales@theseocompany.com" class="external-links">sales@theseocompany.com</a></p>
+          <p>Apple Malaysia Sdn Bhd<br>Level 11<br>Menara CIMB,<br>Jalan Stesen Sentral 2,<br>Kuala Lumpur Sentral,<br>50470 Kuala Lumpur<br>03-2265-7000</p></p>
+          <p><a href="https://support.apple.com/en-my" class="external-links">Apple Support</a></p>
         </div>
       </div> 
       <div class="divider"></div>
       <div class="row">
         <div class="col-md-6 col-xs-12">
-            <a href="#"><i class="icon ion-logo-facebook"></i></a>
-            <a href="#"><i class="icon ion-logo-instagram"></i></a>
-            <a href="#"><i class="icon ion-logo-twitter"></i></a>
-            <a href="#"><i class="icon ion-logo-youtube"></i></a>
+            <a href="https://www.facebook.com/apple/"><i class="icon ion-logo-facebook"></i></a>
+            <a href="https://www.instagram.com/apple/"><i class="icon ion-logo-instagram"></i></a>
+            <a href="https://twitter.com/apple?lang=en"><i class="icon ion-logo-twitter"></i></a>
+            <a href="https://www.youtube.com/applesupport"><i class="icon ion-logo-youtube"></i></a>
           </div>
           <div class="col-md-6 col-xs-12">
-            <small>2018 &copy; All rights reserved. Edited by <a href="" target="blank" class="external-links">Edison</a></small>
+            <small>2018 &copy; All rights reserved. Edited by <a href="" target="blank" class="external-links">UTHM</a></small>
           </div>
       </div>
     </div>

@@ -13,7 +13,7 @@
 
   <body>
 
-    <?php 
+    <?php   
       include 'header.php';
     ?>
   
@@ -26,9 +26,9 @@
         </div>
         <div class="col-md-7 content-box hero-content">
           <span>Make you self more better</span>
-          <h1>Digital Innovation and the <b>Future of Digital Marketing</b></h1>
-          <p>Boost your digital marketing campaigns and increase your conversion rates</p>
-          <a href="https://www.gsmarena.com/apple_iphone_15_pro_max-12548.php" target="_blank" class="btn btn-regular">Learn more</a>
+          <h1>There's still time <br>to work wonders</h1>
+          <p>Finish off your list with great last-minute gifts</p>
+          <a href="https://www.gsmarena.com/apple_iphone_15_pro_max-12548.php" target="_blank" class="btn btn-regular">Shop now</a>
         </div>
       </div>
     </div>
@@ -48,7 +48,7 @@
           </div>
         </div>
         <div class="col-md-7">
-            <img src="../images/demo-image.png" class="img-fluid" alt="Demo image">
+            <img src="https://d3cd3hu9wl72jo.cloudfront.net/1.d/preview/f/e/fee81ee6_df2abeb8_iPadPro12-wifi-Silver.png" class="img-fluid" alt="Demo image">
         </div>
       </div>
     </div>
