@@ -11,7 +11,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Contact</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/sidebar.css">
@@ -32,7 +32,7 @@
   <?php 
     include 'db.php';
 
-    $query = 'SELECT * FROM contact_us';
+    $query = 'SELECT * FROM contact_us WHERE respond != 1';
 
     $result = mysqli_query($conn, $query);
 
@@ -48,6 +48,7 @@
     <?php 
       while($row = mysqli_fetch_assoc($result)) {
     ?>
+
     <div class="col-lg-4 col-md-6 col-sm-6 my-3">
       <div class="card border-primary">
         <div class="card-body">
@@ -55,7 +56,7 @@
           <i class="bi bi-geo-alt-fill"></i>
           <p class="country"><?php echo $row['country']?></p>
           <p class="card-text mt-3 note"><?php echo $row['note']?></p>
-          <a href="reply.php" class="btn btn-primary mx-auto position-absolute reply-btn">Reply</a>
+          <a href="reply.php?id=<?php echo $row['contact_us_id']?>" class="btn btn-primary mx-auto position-absolute reply-btn">Reply</a>
         </div>
       </div>
     </div>
@@ -66,13 +67,18 @@
     </div>
   </div>
   <script>
-    const note = document.getElementsByClassName("note");
-    for(let i = 0; i < note.length; i++) {
-      if((note[i].innerText).length > 80) {
-        note[i].innerText = (note[i].innerText).substring(0,80) + "...";
+    const cutNote = () => {
+      const note = document.getElementsByClassName("note");
+      for(let i = 0; i < note.length; i++) {
+        if((note[i].innerText).length > 80) {
+          note[i].innerText = (note[i].innerText).substring(0,80) + "...";
+        }
       }
-      
     }
+
+    cutNote();
+
+    window.addEventListener('resize', cutNote);
   </script>
   <?php 
     }

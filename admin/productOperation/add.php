@@ -19,10 +19,10 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="container my-4 border border-dark rounded position-relative main-container">
+    <div class="container my-4 border border-dark rounded position-relative main-container w-75">
       <form enctype="multipart/form-data" action="add_product.php" method="post">
-        <div href="../product.php" class="btn btn-danger position-absolute end-0 me-2 mt-2" onclick="discardChanges()">Back</div>
-        <h1 class="mt-1">Add new product</h1>
+        <a href="../product.php" class="btn btn-danger position-absolute end-0 me-2 mt-2" onclick="discardChanges()">Back</a>
+        <h1 class="mt-1 title">Add product</h1>
         <hr>
         <label class="form-label mb-1 fw-bold" for="name">Product Name:</label>
         <br>

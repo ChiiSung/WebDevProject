@@ -1,0 +1,18 @@
+.main-container {
+	max-width: 500px;
+}
+
+.country,
+.email {
+	font-size: 12px;
+	display: inline;
+}
+
+.reply-btn {
+	max-width: 200px;
+}
+
+#reply {
+	resize: none;
+	width: 100%;
+}
