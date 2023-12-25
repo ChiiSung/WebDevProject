@@ -132,6 +132,7 @@
         document.getElementById("modal01").style.display = "block";
       }
     </script>
+    <p>test</p>
     <?php
       include 'footer.php';
     ?>
