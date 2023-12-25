@@ -9,6 +9,12 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
     <link rel="icon" type="image/icon" href="../images/small_logo.png" >
     <title>Apple</title>
+    <style>
+      #productIF img{
+        border-radius: 50px;
+        object-fit: cover;
+      }
+    </style>
   </head>
     
   <body>
@@ -40,9 +46,21 @@
               style="display: block; width: 100%; position: relative; padding-bottom: 10%"
               class="tickcounter"
               href="//www.tickcounter.com" target="">Countdown</a>
-          <div style="width:100%;">
+          <div style="width:100%;background-color:#f2f2f2">
             <h2 style="text-align:center;margin:100px auto;width:50%;border-bottom:1px solid gray;padding-bottom:10px;">Here's What we have</h2>
             <?php 
+              $command = "SELECT * From newProduct WHERE eventId = '$row[eventId]'";
+              $result = mysqli_query($conn, $command);
+              while($row2 = mysqli_fetch_assoc($result)){
+                echo "<div id='productIF' style='margin:20px auto;width:50%;display:flex;background-color:white;border-radius:50px;'>
+                        <img src='$row2[productImg]' alt='pic' width='50%'>
+                        <div style='display:inline block;padding:5%;margin:auto;'>
+                            <h2>$row2[productName]</h2>
+                            <p style='max-height:200px;overflow:auto;'>$row2[productDescription])</p>
+                            <button onClick='window.location.href=`$row2[productUrl]`' style='background-color:gray;color:white;border-radius:3px;height:50px;width:150px;border-color:lightgray;'>Buy Now</button>
+                        </div>
+                      </div>";
+              }
               
             ?>
           </div>
