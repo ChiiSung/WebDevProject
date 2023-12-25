@@ -32,11 +32,11 @@
   
   <!-- E N D  B A N N E R -->
 
-  <!-- H E R O -->
-  <section id="hero">
+  <!-- M A R K E T I N G -->
+  <section id="marketing">
     <div class="container">
       <div class="row">
-        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+        <div class="col-md-5">
           <img src="../images/iphone.jpg" class="img-fluid" alt="Demo image">
         </div>
         <div class="col-md-7 content-box hero-content">
@@ -47,20 +47,20 @@
       </div>
     </div>
   </section>
-  <!-- E N D  H E R O -->
-
   <!-- E N D  M A R K E T I N G -->
+
+  <!-- M A R K E T I N G -->
   <section id="marketing">
     <div class="container">
       <div class="row">
-        <div class="col-md-5">
+        <div class="col-md-6">
           <div class="content-box">
             <h2><b>iPad</b></h2>
             <p>Loveable. Drawable. Magical</p>
             <a href="product.php" class="btn btn-regular">Buy now</a>
           </div>
         </div>
-        <div class="col-md-7">
+        <div class="col-md-6">
             <img src="https://d3cd3hu9wl72jo.cloudfront.net/1.d/preview/f/e/fee81ee6_df2abeb8_iPadPro12-wifi-Silver.png" class="img-fluid" alt="Demo image">
         </div>
       </div>
@@ -68,10 +68,36 @@
   </section>
   <!-- E N D  M A R K E T I N G -->
 
-  <!-- E V E N T -->
-  <section>
-    <div>
+  <!-- M A R K E T I N G -->
+  <section id="marketing">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="../images/macbook-air.jpg" class="img-fluid" alt="Demo image">
+        </div>
+        <div class="col-md-6 content-box">
+          <h1>MacBook Pro</h1>
+          <p>Mind-blowing, Head-turning</p>
+          <a href="product.php" class="btn btn-regular">Buy now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- E N D  M A R K E T I N G -->
 
+  <!-- E V E N T -->
+  <section id="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <img src="https://image.cnbcfm.com/api/v1/image/106941688-1631644205737-AppleEventSEP14KeynoteTim_Cook02.jpg?v=1674567719" class="img-fluid" alt="Demo image">
+        </div>
+        <div class="col-md-5 content-box hero-content">
+          <h1>Want to learn more about us?</h1>
+          <p>Discover our latest new and event</p>
+          <a href="event.php" class="btn btn-regular">Explore now</a>
+        </div>
+      </div>
     </div>
   </section>
   <!-- E N D  E V E N T -->

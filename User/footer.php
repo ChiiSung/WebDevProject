@@ -47,7 +47,7 @@
             <a href="https://www.youtube.com/applesupport"><i class="icon ion-logo-youtube"></i></a>
           </div>
           <div class="col-md-6 col-xs-12">
-            <small>2018 &copy; All rights reserved. Edited by <a href="" target="blank" class="external-links">UTHM</a></small>
+            <small>2018 &copy; All rights reserved. Edited by <a href="https://www.uthm.edu.my/en/" target="_blank" class="external-links">UTHM</a></small>
           </div>
       </div>
     </div>
