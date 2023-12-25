@@ -26,17 +26,27 @@
     <section>
       <div class="row">
           <img src="<?php echo $row["eventImg"] ?>" alt="pic" width="100%">
+          <div style="width:100%;background-color:black;margin-bottom:80px;padding-bottom:40px;">
+            <h2 style="text-align:center;color:white;"><?php echo $row['eventTitle']?></h2><br>
+            <h4 style="text-align:center;color:white;width:50%;margin:auto;"><?php echo $row['eventDescription'] ?></h4>
+          </div>
+          <a data-type="countdown"
+              data-name="Event start in:"
+              data-bg_color="#ffffff"
+              data-name_color="#000000"
+              data-border_color="#ffffff"
+              data-dt= "<?php echo $row['eventTime'];?>"
+              data-timezone="	Asia/Kuala_Lumpur"
+              style="display: block; width: 100%; position: relative; padding-bottom: 10%"
+              class="tickcounter"
+              href="//www.tickcounter.com" target="">Countdown</a>
+          <div style="width:100%;">
+            <h2 style="text-align:center;margin:100px auto;width:50%;border-bottom:1px solid gray;padding-bottom:10px;">Here's What we have</h2>
+            <?php 
+              
+            ?>
+          </div>
       </div>
-      <a data-type="countdown"
-          data-name="Event start in:"
-          data-bg_color="#ffffff"
-          data-name_color="#000000"
-          data-border_color="#ffffff"
-          data-dt= "<?php echo $row['eventTime'];?>"
-          data-timezone="	Asia/Kuala_Lumpur"
-          style="display: block; width: 100%; position: relative; padding-bottom: 10%"
-          class="tickcounter"
-          href="//www.tickcounter.com" target="">Countdown</a>
     </section>
       
       <script>
