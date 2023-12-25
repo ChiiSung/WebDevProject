@@ -378,6 +378,13 @@ footer small {
 		font-size: 0.7em;
 		text-align: center;
 	}
+	#productIF{
+		flex-direction: column;
+	}
+	#productIF img{
+		width: 80%;
+		align-self: center;
+	}
 }
 @media (max-width: 991px) {
 	.nav-right {
