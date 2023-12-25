@@ -8,7 +8,7 @@
     <img src="../images/small_logo.png" class="img-fluid nav-logo-mobile" alt="Company Logo">
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <div class="container">
-          <img src="../images/logo.png" class="img-fluid nav-logo-desktop" alt="Company Logo">
+        <a href="index.php"><img src="../images/logo.png" class="img-fluid nav-logo-desktop" alt="Company Logo"></a>
         <ul class="navbar-nav ml-auto nav-right" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
           <li class="nav-item nav-custom-link">
             <a class="nav-link" href="index.php">Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
