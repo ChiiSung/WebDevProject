@@ -70,7 +70,7 @@
       <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)" style="top:250px;">&#10095;</button>
     </section>
     <div>
-      <div class="room" style="border:3px solid lightgray;margin:-10px 8% 10px 8%;padding:30px;">
+      <div class="room" style="border:3px solid lightgray;margin:-10px 8% 100px 8%;padding:30px;">
         <div style="margin-bottom:20px;">
           <h3 style="margin:0px auto 5px 30px;">Product</h3>
         </div>
@@ -127,7 +127,6 @@
       function auto(){
         plusDivs(1);
       }
-
       function onClick(element) {
         document.getElementById("img01").src = element.src;
         document.getElementById("modal01").style.display = "block";

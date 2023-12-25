@@ -15,11 +15,42 @@
     
       <?php 
         include 'header.php';
+        $now = date("Y-m-d h:i:sa");
+        $command = "SELECT * From event WHERE eventTime > '$now'";
+        $result = mysqli_query($conn, $command);
+        $row = mysqli_fetch_assoc($result);
+        if(mysqli_num_rows($result) == 0){
+          echo "<section><h1>Currently no event</h1></div></section>";
+        }else{
       ?>
-    
-    
+    <section>
+      <div class="row">
+          <img src="<?php echo $row["eventImg"] ?>" alt="pic" width="100%">
+      </div>
+      <a data-type="countdown"
+          data-name="Event start in:"
+          data-bg_color="#ffffff"
+          data-name_color="#000000"
+          data-border_color="#ffffff"
+          data-dt= "<?php echo $row['eventTime'];?>"
+          data-timezone="	Asia/Kuala_Lumpur"
+          style="display: block; width: 100%; position: relative; padding-bottom: 10%"
+          class="tickcounter"
+          href="//www.tickcounter.com" target="">Countdown</a>
+    </section>
       
+      <script>
+        (function(d, s, id) { 
+          var js, pjs = d.getElementsByTagName(s)[0]; 
+          if (d.getElementById(id)) 
+            return; 
+          js = d.createElement(s); js.id = id;
+          js.src = "//www.tickcounter.com/static/js/loader.js";
+          pjs.parentNode.insertBefore(js, pjs); 
+        }(document, "script", "tickcounter-sdk"));
+      </script>
       <?php 
+        }
         include 'footer.php';
       ?> 
   </body>
