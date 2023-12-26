@@ -15,6 +15,15 @@
                 object-fit: cover;
                 width: 40%;
             }
+            div button{
+                background-color:gray;
+                color:white;
+                border-radius:3px;
+                height:50px;
+                width:150px;
+                border-color:lightgray;
+                cursor: pointer;
+            }
         </style>
     </head>
     
@@ -35,7 +44,7 @@
                             <h2><?php echo $row['productName'] ?></h2>
                             <h3 style="color:orangered">RM<?php echo $row['productPrice'] ?></h3>
                             <p style="max-height:200px;overflow:auto;"><?php echo str_replace("\n","<br>",$row['productDescription']) ?></p>
-                            <button onClick="window.location.href='<?php echo $row['productUrl'] ?>'" style="background-color:gray;color:white;border-radius:3px;height:50px;width:150px;border-color:lightgray;">Buy Now</button>
+                            <button onClick="window.location.href='<?php echo $row['productUrl'] ?>'">Buy Now</button>
                         </div>
                     </div>
                 <?php
