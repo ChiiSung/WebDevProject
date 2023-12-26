@@ -1,0 +1,43 @@
+.add-event-container {
+	cursor: pointer;
+	padding: 5px;
+	border-radius: 10px;
+	border: 1px solid black;
+	top: 0;
+	right: 10px;
+}
+
+/* changed later */
+.add-event-container:hover {
+	background-color: rgb(185, 182, 182);
+	color: white;
+}
+
+.add-icon {
+	font-size: 20px;
+}
+
+.icon {
+	font-size: 20px;
+	color: black;
+}
+
+.icon:hover {
+	color: blue;
+	background-color: lightgray;
+}
+
+.bin-icon {
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 575.9px) {
+	.title {
+		text-align: center;
+		padding: 0;
+	}
+
+	.add-event-container {
+		top: 190px;
+	}
+}

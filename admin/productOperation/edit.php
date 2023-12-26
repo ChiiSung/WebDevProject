@@ -60,7 +60,6 @@
       </form>
     </div>
     <script>
-      // change later
       const discardChanges = () => {
         const result = confirm("Discard changes?");
         if(result) {
