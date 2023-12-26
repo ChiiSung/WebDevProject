@@ -37,7 +37,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-5">
-          <img src="../images/iphone.jpg" class="img-fluid" alt="Demo image">
+          <img src="../images/sample.jpg" class="img-fluid" alt="Demo image">
         </div>
         <div class="col-md-7 content-box hero-content">
           <h1>iPhone 15 Pro</h1>
