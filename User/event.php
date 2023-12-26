@@ -135,7 +135,7 @@
       <?php 
         include 'header.php';
         $now = date("Y-m-d h:i:sa");
-        $command = "SELECT * From event WHERE eventTime > '$now'";
+        $command = "SELECT * From event WHERE eventTime > '$now' ORDER BY eventTime";
         $result = mysqli_query($conn, $command);
         $row = mysqli_fetch_assoc($result);
         if(mysqli_num_rows($result) == 0){
