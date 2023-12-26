@@ -3,9 +3,10 @@
 
   include '../db.php';
 
-  $productId = $_GET['id'];
+  $eventId = $_GET['eventId'];
+
+  $productId = $_GET['productId'];
   $productName = $_POST['name'];
-  $productPrice = $_POST['price'];
   $productUrl = $_POST['url'];
   $productDescription = $_POST['description'];
 
@@ -26,15 +27,17 @@
 
   if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $query = "UPDATE product SET productName = '$productName', productPrice = '$productPrice', productDescription = '$productDescription', imgPath = '$imgPath', productUrl = '$productUrl' WHERE productId = '$productId'";
+    $query = "UPDATE newproduct SET productName = '$productName', productDescription = '$productDescription', productImg = '$imgPath', productUrl = '$productUrl' WHERE newProductId = '$productId'";
 
     mysqli_query($conn, $query);
     mysqli_close($conn);
 
+    unset($_SESSION['imgPath']);
+
     echo '
     <script>
       alert("Product edited successfully");
-      window.location.href = "../product.php";
+      window.location.href = "edit.php?id=' . $eventId . '";
     </script>
     ';
   } else {

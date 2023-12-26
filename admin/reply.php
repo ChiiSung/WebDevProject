@@ -45,7 +45,7 @@
           <p class="email"><?php echo $row['email']?></p>
           <p class="card-text mt-3 note"><?php echo $row['note']?></p>
           <textarea name="reply" id="reply" rows="6" class="ps-1 mb-2 border border-dark rounded-3" required placeholder="Reply message" maxlength="200"></textarea>
-          <input class="btn btn-primary d-block w-50 mx-auto reply-btn my-4" value="Reply" type="submit"/>
+          <input class="btn btn-primary d-block w-50 mx-auto reply-btn my-4" value="REPLY" type="submit"/>
         </div>
       </form>
     </div>
