@@ -14,6 +14,15 @@
         border-radius: 50px;
         object-fit: cover;
       }
+      .productBt{
+        background-color: gray;
+        color: white;
+        border-radius: 3px;
+        height: 50px;
+        width: 150px;
+        border-color: lightgray;
+        Cursor: pointer;
+      }
       .image-list img{
         max-height: 40%;
         border-radius: 30px;
@@ -172,7 +181,7 @@
                         <div style='display:inline block;padding:5%;margin:auto;'>
                             <h2>$row2[productName]</h2>
                             <p style='max-height:200px;overflow:auto;'>$row2[productDescription]</p>
-                            <button onClick='window.location.href=`$row2[productUrl]`' style='background-color:gray;color:white;border-radius:3px;height:50px;width:150px;border-color:lightgray;'>Buy Now</button>
+                            <button onClick='window.location.href=`$row2[productUrl]`' class='productBt'>Buy Now</button>
                         </div>
                       </div>";
               }
