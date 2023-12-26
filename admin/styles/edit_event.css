@@ -1,0 +1,23 @@
+.main-container {
+	max-width: 600px;
+	width: 90%;
+}
+
+.product-container {
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+.card {
+	flex-shrink: 0;
+}
+
+.back-btn {
+	width: 80px;
+	right: 0;
+}
+
+.plus-icon {
+	font-size: 45px;
+	cursor: pointer;
+}

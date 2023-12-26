@@ -52,7 +52,7 @@
       }
 
       $numOfProduct = getTotal('product');
-      $numOfEvent;
+      $numOfEvent = getTotal('event');
       $numOfContact = getTotalContact();
     ?>
     
@@ -83,7 +83,7 @@
               <div class="card mx-auto my-3 card-2" onclick="window.location.href = 'event.php'">
                 <div class="card-body">
                   <h5 class="card-title">Total Event</h5>
-                  <p class="card-text">5</p>
+                  <p class="card-text"><?php echo $numOfEvent?></p>
                 </div>
               </div>
             </div>

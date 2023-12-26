@@ -24,7 +24,6 @@
     <a href="dashboard.php" class="btn nav-btn text-white d-block text-start">Dashboard</a>
     <a href="product.php" class="btn nav-btn text-white d-block text-start">Product</a>
     <a href="event.php" class="btn nav-btn text-white d-block text-start">Event</a>
-    <!-- change later -->
     <a href="contact.php" class="btn nav-btn text-white d-block text-start selected">Contact</a>
     <a href="clearId.php" class="btn nav-btn text-white d-block text-start position-absolute w-100 bottom-0">Logout</a>
   </div>
@@ -56,7 +55,7 @@
           <i class="bi bi-geo-alt-fill"></i>
           <p class="country"><?php echo $row['country']?></p>
           <p class="card-text mt-3 note"><?php echo $row['note']?></p>
-          <a href="reply.php?id=<?php echo $row['contact_us_id']?>" class="btn btn-primary mx-auto position-absolute reply-btn">Reply</a>
+          <a href="reply.php?id=<?php echo $row['contact_us_id']?>" class="btn btn-primary mx-auto position-absolute reply-btn">REPLY</a>
         </div>
       </div>
     </div>
