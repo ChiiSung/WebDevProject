@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- 主机： 127.0.0.1
--- 生成日期： 2023-12-28 13:22:02
--- 服务器版本： 10.4.28-MariaDB
--- PHP 版本： 8.2.4
+-- Host: 127.0.0.1
+-- Generation Time: Dec 28, 2023 at 01:55 PM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- 数据库： `webdev_project_db`
+-- Database: `webdev_project_db`
 --
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `admin`
+-- Table structure for table `admin`
 --
 
 CREATE TABLE `admin` (
@@ -33,7 +33,7 @@ CREATE TABLE `admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- 转存表中的数据 `admin`
+-- Dumping data for table `admin`
 --
 
 INSERT INTO `admin` (`admin_id`, `admin_password`) VALUES
@@ -42,22 +42,30 @@ INSERT INTO `admin` (`admin_id`, `admin_password`) VALUES
 -- --------------------------------------------------------
 
 --
--- 表的结构 `contact_us`
+-- Table structure for table `contact_us`
 --
 
 CREATE TABLE `contact_us` (
-  `first_name` varchar(255) DEFAULT NULL,
-  `last_name` varchar(255) DEFAULT NULL,
-  `email` varchar(255) DEFAULT NULL,
-  `note` varchar(255) DEFAULT NULL,
-  `country` varchar(255) DEFAULT NULL,
-  `respond` tinyint(1) DEFAULT NULL
+  `contact_us_id` int(11) NOT NULL,
+  `first_name` varchar(255) NOT NULL,
+  `last_name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `note` varchar(255) NOT NULL,
+  `country` varchar(255) NOT NULL,
+  `respond` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `contact_us`
+--
+
+INSERT INTO `contact_us` (`contact_us_id`, `first_name`, `last_name`, `email`, `note`, `country`, `respond`) VALUES
+(1, 'cs', 'ss', 'lingchiisung@gmail.com', 'asdf', 'Malaysia', 0);
 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `event`
+-- Table structure for table `event`
 --
 
 CREATE TABLE `event` (
@@ -69,7 +77,7 @@ CREATE TABLE `event` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- 转存表中的数据 `event`
+-- Dumping data for table `event`
 --
 
 INSERT INTO `event` (`eventTitle`, `eventDescription`, `eventImg`, `eventTime`, `eventId`) VALUES
@@ -78,7 +86,7 @@ INSERT INTO `event` (`eventTitle`, `eventDescription`, `eventImg`, `eventTime`, 
 -- --------------------------------------------------------
 
 --
--- 表的结构 `newproduct`
+-- Table structure for table `newproduct`
 --
 
 CREATE TABLE `newproduct` (
@@ -91,7 +99,7 @@ CREATE TABLE `newproduct` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- 转存表中的数据 `newproduct`
+-- Dumping data for table `newproduct`
 --
 
 INSERT INTO `newproduct` (`eventId`, `productName`, `productDescription`, `productImg`, `productUrl`, `newProductId`) VALUES
@@ -101,7 +109,7 @@ INSERT INTO `newproduct` (`eventId`, `productName`, `productDescription`, `produ
 -- --------------------------------------------------------
 
 --
--- 表的结构 `product`
+-- Table structure for table `product`
 --
 
 CREATE TABLE `product` (
@@ -114,7 +122,7 @@ CREATE TABLE `product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- 转存表中的数据 `product`
+-- Dumping data for table `product`
 --
 
 INSERT INTO `product` (`productId`, `productName`, `productPrice`, `productDescription`, `imgPath`, `productUrl`) VALUES
@@ -125,46 +133,58 @@ INSERT INTO `product` (`productId`, `productName`, `productPrice`, `productDescr
 (13, 'Apple iPhone 14 Plus', 4099.00, 'iPhone 14. With the most impressive dual-camera system on iPhone. Capture stunning photos in low light and bright light. Crash Detection,[1] a new safety feature, calls for help when you can’t.\r\n\r\n\r\n\r\nKey feature \r\n\r\n·   6.1-inch Super Retina XDR display[', 'https://down-my.img.susercontent.com/file/my-11134211-7r98y-llqjj3r94dqu50', 'https://shopee.com.my/Apple-iPhone-14-Plus-i.304504082.14992598697?sp_atk=86bfb349-6db0-452a-b687-f77bdbac3e33');
 
 --
--- 转储表的索引
+-- Indexes for dumped tables
 --
 
 --
--- 表的索引 `event`
+-- Indexes for table `contact_us`
+--
+ALTER TABLE `contact_us`
+  ADD PRIMARY KEY (`contact_us_id`);
+
+--
+-- Indexes for table `event`
 --
 ALTER TABLE `event`
   ADD PRIMARY KEY (`eventId`);
 
 --
--- 表的索引 `newproduct`
+-- Indexes for table `newproduct`
 --
 ALTER TABLE `newproduct`
   ADD PRIMARY KEY (`newProductId`),
   ADD KEY `eventId` (`eventId`);
 
 --
--- 表的索引 `product`
+-- Indexes for table `product`
 --
 ALTER TABLE `product`
   ADD PRIMARY KEY (`productId`);
 
 --
--- 在导出的表使用AUTO_INCREMENT
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- 使用表AUTO_INCREMENT `event`
+-- AUTO_INCREMENT for table `contact_us`
+--
+ALTER TABLE `contact_us`
+  MODIFY `contact_us_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `event`
 --
 ALTER TABLE `event`
   MODIFY `eventId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- 使用表AUTO_INCREMENT `newproduct`
+-- AUTO_INCREMENT for table `newproduct`
 --
 ALTER TABLE `newproduct`
   MODIFY `newProductId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- 使用表AUTO_INCREMENT `product`
+-- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
   MODIFY `productId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
