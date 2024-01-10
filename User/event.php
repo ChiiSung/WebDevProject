@@ -196,7 +196,7 @@
                     <ul class="image-list">
                       <?php 
         }
-                        $command = "SELECT * From event WHERE eventTime < '$now'";
+                        $command = "SELECT * From event WHERE eventTime < '$now' ORDER BY eventTime DESC";
                         $result = mysqli_query($conn, $command);
                         while($row = mysqli_fetch_assoc($result)){
                           echo "<div class='image-item' style='background-color:#f2f2f2;border-radius:30px'> 
